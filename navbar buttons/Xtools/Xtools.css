@@ -1,0 +1,353 @@
+/* author: https://codepen.io/nocni_sovac/pen/vYGoZpP
+Zarko Rvovic
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle, #131111 0%, black 17%, black 27%);
+  block-size: 100vh;
+  font-family: "Fira Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cursor {
+  inline-size: 40px;
+  block-size: 40px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 2px -3px 41px -1px rgba(250, 250, 250, 0.64);
+  pointer-events: none;
+}
+
+.side-menu {
+  inline-size: 500px;
+  block-size: 100vh;
+  position: absolute;
+  inset-inline-end: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-menu #menuBtn {
+  position: absolute;
+  inset-block-start: 50px;
+  inset-inline-end: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+  block-size: auto;
+}
+.side-menu #menuBtn input {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  block-size: 100%;
+  inline-size: 100%;
+  opacity: 0;
+  z-index: 9;
+  inset-block-start: 10px;
+}
+.side-menu #menuBtn input:checked ~ span:nth-child(2) {
+  transform-style: preserve-3d;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+.side-menu #menuBtn input:checked ~ span:nth-child(3) {
+  inline-size: 21px;
+  block-size: 1px;
+  transform: rotate(90deg);
+}
+.side-menu #menuBtn span {
+  position: relative;
+  display: block;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.2s linear;
+}
+.side-menu #menuBtn span:nth-child(2) {
+  transform-style: preserve-3d;
+  inline-size: 35px;
+  block-size: 35px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.side-menu #menuBtn span:nth-child(3) {
+  inline-size: 3px;
+  block-size: 3px;
+  background: white;
+  margin-block-start: -23px;
+}
+.side-menu .menu {
+  text-align: end;
+  display: none;
+}
+.side-menu .menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 25px 0;
+  font-size: 23px;
+}
+.side-menu .straight-line {
+  margin: 35px 0;
+  block-size: 2px;
+  border: 0;
+  background: linear-gradient(to right, #000000 0%, #dffff4 40%, #c1ffea 60%, #000000 100%);
+  inline-size: 0vh;
+  inset-inline-start: 5%;
+  position: relative;
+  transform: translateX(-50%) rotate(90deg);
+  position: absolute;
+}
+
+.mainText {
+  inline-size: 50%;
+  margin-inline-start: -430px;
+  margin-block-start: 74px;
+}
+.mainText .mainTitle {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60px;
+  position: relative;
+  letter-spacing: 10px;
+  position: relative;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #ffffff;
+  text-wrap-style: 2px #ffffff;
+  -webkit-text-fill-color: transparent;
+  border-inline-color: transparent;
+  color: transparent;
+  transition: all 0.4s linear;
+  opacity: 0.5;
+  user-select: none;
+}
+.mainText .mainTitle:hover {
+  opacity: 1;
+  -webkit-text-fill-color: white;
+  border-inline-color: white;
+}
+.mainText .mainTitle:hover ~ .cursor {
+  transform: scale(1.4);
+  mix-blend-mode: difference;
+  background: white;
+}
+.mainText .subTitle {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+.planetImg {
+  transform: scale(0.7) rotate(158deg);
+  position: absolute;
+  inset-block-start: -5%;
+  inset-inline-end: 13%;
+  animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px) translatex(5px) scale(0.7) rotate(156deg);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px) translatex(-5px) scale(0.7) rotate(162deg);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px) translatex(5px) scale(0.7) rotate(156deg);
+  }
+}
+.explosion {
+  inline-size: 30px;
+  block-size: 30px;
+  /* border-radius: 50%; */
+  position: absolute;
+  transition-duration: 10ms;
+  transition-timing-function: ease-out;
+  animation: meniItemClick 0.3s;
+}
+
+@keyframes meniItemClick {
+  0% {
+    transform: scale(0.3);
+    box-shadow: 0 0 0px 0px #9ab3f5;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 0.7;
+    box-shadow: 0 0 10px 8px #9ab3f5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    box-shadow: 0 0 0px 0px #9ab3f5;
+  }
+}
+#WebGL-output {
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+}
+
+.dg {
+  display: none;
+}
+
+
+
+
+
+
+
+/*  */
+
+
+
+/* author: https://codepen.io/simeydotme/pen/pomRJeE
+Simon Goellner
+ */
+
+ @property --a {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+.dark button {
+  --a: 0%;
+  --hue: 170deg;
+  --x: 50;
+  --y: 50;
+  --button: hsl(var(--hue), 66%, 66%);
+  --edge: 20px;
+  --size: 2em;
+  
+  background: transparent;
+  color: hsla(var(--hue), 80%, 30%, 0.7);
+  font-size: 1.8em;
+  position: relative;
+  padding: calc(var(--size)) calc(var(--size)*1.5);
+  animation: color 20s linear infinite both;
+  transition: 
+      --a .5s ease-in-out, 
+      scale var(--spring-duration) var(--spring-easing);
+  scale: 0.92;
+  isolation: isolate;
+  &:hover {
+      --a: 100%;
+      transition-duration: .5s, 1s;
+      box-shadow: none;
+      opacity: 1;
+      scale: 1;
+  }
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  inset: 0em;
+  /** here's the magic. A blur and a svg filter */
+  filter: blur(12px) url(#goo) drop-shadow(0 .25em .5em hsla(0deg, 0%, 0%, 0.8)); 
+  /** followed by a radial-gradient which causes the
+  gooey effect to follow mouse-position */
+  background-image:
+      linear-gradient(0deg,var(--button),var(--button)),
+      radial-gradient(
+          40% 70% at calc(var(--x) * 1%) calc(var(--y) * 1%),
+          hsla(var(--hue), 77%, 77%, var(--a)) 0%,
+          transparent 90%
+      );
+  /** and finally a background-clip so the radial-gradient
+  is larger than the linear-gradient */
+  background-clip: content-box, border-box;
+  padding: 24px;
+  z-index: -1;
+  border: inherit;
+  animation: color 20s linear infinite both;
+}
+
+.pomodoro {
+  font-size: large;
+  color: #000000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@property --hue {
+  syntax: "<angle>";
+  initial-value: 170deg;
+  inherits: false;
+}
+
+@keyframes color {
+  from {
+      --hue: 170deg;
+  }
+  to {
+      --hue: 530deg;
+  }
+}
+
+body, html {
+  block-size: 100%;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  color: var(--light);
+  text-align: center;
+}
+
+:root {
+  --spring-easing: linear(
+  0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+  1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+  1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+  0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+  0.998 84%, 1
+);
+  --spring-duration: 1.66s;
+}

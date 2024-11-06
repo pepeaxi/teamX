@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>teamX - Zamonaviy kasblar akademiyasi</title>
+    <meta name="title" content="teamX - Zamonaviy kasblar akademiyasi">
+    <meta name="description" content="Zamonaviy kasblar akademiyasi">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="Untitled-1.ico" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+  </head>
+
+  <body id="top">
+
+    <!--
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container"> <img class="symbolX1"
+          src="images/logo xmind purple vert@3x.png" alt="symbol" width="100">
+
+        <!-- <a href="#" class="logo">
+        <img src="./images/logo teamx purple vert.svg" width="200rem" alt="teamX logo">
+      </a> -->
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+
+            <button class="nav-close-btn" aria-label="close menu"
+              data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Bosh menu</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>teamX nima?</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link"
+                data-nav-link>Yo'nalishlar</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#mapview" class="navbar-link" data-nav-link>Manzil</a>
+            </li>
+            <li class="navbar-item">
+              <a href="navbar buttons/Xtools/Xtools.html" class="navbar-link"
+                data-nav-link>X tools</a>
+            </li>
+          </ul>
+
+        </nav>
+
+        <div class="header-actions">
+
+          <!-- Updated "O'quvchi kabineti" button to navigate to student login or sign-up page -->
+          <a href="login/login.html" class="btn has-before">
+            <span class="span">O'quvchi kabineti</span>
+            <ion-icon name="arrow-forward-outline"
+              aria-hidden="true"></ion-icon>
+          </a>
+
+          <button class="header-action-btn" aria-label="open menu"
+            data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+      </div>
+    </header>
+
+    <main>
+      <article>
+
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero has-bg-image" id="home" aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.svg')">
+          <div class="container">
+
+            <div class="hero-content">
+
+              <h1 class="h1 section-title">
+                GAP EMAS, ENDI <span class="span">RAQAM</span>
+              </h1>
+
+              <h2 class="hero-text">
+                O'zbekistonda <span class="spaninline">birinchi</span> bor!
+              </h2>
+
+              <a href="#courses" class="btn has-before">
+                <span class="span">Yo'nalishlar bilan tanishish</span>
+
+                <ion-icon name="arrow-forward-outline"
+                  aria-hidden="true"></ion-icon>
+              </a>
+
+            </div>
+            <div class="symbolX">
+              <img src="images/logo xmind purple vert@3x.png" alt="Symbol X"
+                width="500">
+
+            </div>
+
+          </div>
+        </section>
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+
+            <figure class="about-banner">
+
+              <div class="img-holder" style="--width: 520; --height: 370;">
+                <img src="./images/photo_2024-03-06_09-33-23 (2).jpg"
+                  width="520" height="370" loading="lazy"
+                  alt="about banner" class="img-cover">
+              </div>
+
+              <img src="./assets/images/about-shape-1.svg" width="360"
+                height="420" loading="lazy" alt
+                class="shape about-shape-1">
+
+              <img src="./assets/images/about-shape-2.svg" width="371"
+                height="220" loading="lazy" alt
+                class="shape about-shape-2">
+
+              <img src="./assets/images/about-shape-3.png" width="722"
+                height="528" loading="lazy" alt
+                class="shape about-shape-3">
+
+            </figure>
+
+            <div class="about-content">
+
+              <p class="section-subtitle" style="font-size: 5rem;">Biz
+                haqimizda</p>
+
+              <h2 class="h2 section-title">
+                Ilmiy qaramliksiz, Cheklanishlarsiz <span class="span">Mustaqil
+                  ta'lim</span>
+              </h2>
+
+              <p class="section-text">
+                Har bir inson o'zi mustaqil xohlagan yo'nalishi yoki xohlagan
+                tilini o'rganishi mumkin va buning isboti ham bor. Insonga
+                faqatgina o'ziga ishonch va qat'iyat kerak!
+              </p>
+
+              <ul class="about-list">
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-done-outline"
+                    aria-hidden="true"></ion-icon>
+
+                  <span class="span">20 oylik metod</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-done-outline"
+                    aria-hidden="true"></ion-icon>
+
+                  <span class="span">Natijaga kafolat</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-done-outline"
+                    aria-hidden="true"></ion-icon>
+
+                  <span class="span">Ish bilan ta'minlash</span>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- 
+        - #COURSE
+      -->
+
+        <section class="section course" id="courses" aria-label="course">
+          <div class="container">
+
+            <p class="section-subtitle">YO'NALISHLAR</p>
+
+            <h2 class="h2 section-title">Tanlang va boshlang</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="course-card">
+
+                  <figure class="card-banner img-holder"
+                    style="--width: 370; --height: 220;">
+                    <img src="./images/Untitled design/2.jpg" width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">20 OY</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Zero To Hero</span>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Full stack dasturlash</a>
+                    </h3>
+
+                    <div class="wrapper">
+
+                    </div>
+
+                    <data class="price" value="29">100 000 so'm</data>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="library-outline"
+                          aria-hidden="true"></ion-icon>
+
+                        <span class="span">600 ta dars</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+
+                  <figure class="card-banner img-holder"
+                    style="--width: 370; --height: 220;">
+                    <img src="./images/Untitled design/1.jpg" width="370"
+                      height="220" loading="lazy"
+                      alt="Java Programming Masterclass for Software Developers"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">20 OY</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Zero To Hero</span>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Mobil dasturlash</a>
+                    </h3>
+
+                    <data class="price" value="49">100 000 so'm</data>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="library-outline"
+                          aria-hidden="true"></ion-icon>
+
+                        <span class="span">600 ta dars</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="course-card">
+
+                  <figure class="card-banner img-holder"
+                    style="--width: 370; --height: 220;">
+                    <img src="./images/Untitled design/5.jpg" width="370"
+                      height="220" loading="lazy"
+                      alt="The Complete Camtasia Course for Content Creators"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">20 OY</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Zero To Hero</span>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Grafik dizayn</a>
+                    </h3>
+
+                    <data class="price" value="35">100 000 so'm</data>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="library-outline"
+                          aria-hidden="true"></ion-icon>
+
+                        <span class="span">600 ta dars</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="course-card">
+
+                  <figure class="card-banner img-holder"
+                    style="--width: 370; --height: 220;">
+                    <img src="./images/Untitled design/3.jpg" width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">20 OY</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Zero To Hero</span>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Crypto trading</a>
+                    </h3>
+
+                    <div class="wrapper">
+
+                    </div>
+
+                    <data class="price" value="29">100 000 so'm</data>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="library-outline"
+                          aria-hidden="true"></ion-icon>
+
+                        <span class="span">600 ta dars</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="course-card">
+
+                  <figure class="card-banner img-holder"
+                    style="--width: 370; --height: 220;">
+                    <img src="./images/Untitled design/4.jpg" width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="abs-badge">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">20 OY</span>
+                  </div>
+
+                  <div class="card-content">
+
+                    <span class="badge">Zero To Hero</span>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Stock trading</a>
+                    </h3>
+
+                    <div class="wrapper">
+
+                    </div>
+
+                    <data class="price" value="29">100 000 so'm</data>
+
+                    <ul class="card-meta-list">
+
+                      <li class="card-meta-item">
+                        <ion-icon name="library-outline"
+                          aria-hidden="true"></ion-icon>
+
+                        <span class="span">600 ta dars</span>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn has-before">
+              <span class="span">JAMOAGA QO'SHILISH</span>
+
+              <ion-icon name="arrow-forward-outline"
+                aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- 
+        - #VIDEO
+      -->
+
+        <section class="video has-bg-image" aria-label="video"
+          style="background-image: url('./assets/images/video-bg.png')">
+          <div class="container">
+
+            <div class="video-card">
+
+              <div class="video-banner img-holder has-after"
+                style="--width: ; --height: ;">
+                <img src="./assets/images/video-banner.jpg" width="970"
+                  height="550" loading="lazy" alt="video banner"
+                  class="img-cover">
+
+                <button class="play-btn" aria-label="play video">
+                  <ion-icon name="play" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+           
+            </div>
+            <div class="text-container">
+              <img src="images/logo teamx purple vert.svg" style="height: 150px;"><p class="yozuv" style="color: black;"> - haqida to'liq bilib olishingiz mumkin</p>
+            </div>
+            
+          </div>
+          
+        </section>
+
+        <div class="mapview" id="mapview" aria-label="mapview">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d781401.6782786534!2d64.709548!3d40.089902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f5069c5f0af7919%3A0xd146fc62b5a7a9c8!2steamX!5e0!3m2!1sen!2sus!4v1729276182794!5m2!1sen!2sus"
+            width="1920" height="1080" style="border:0;" allowfullscreen
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- 
+    - #FOOTER
+  -->
+
+        <footer class="footer"
+          style="background-image: url('./assets/images/footer-bg.png')">
+
+          <div class="footer-top section">
+            <div class="container grid-list">
+
+              <div class="footer-brand">
+
+                <!-- <a href="#" class="logo">
+              <img src="./images/yellow_horz.png" width="162" height="50"
+                alt="teamX logo">
+            </a> -->
+
+                <p class="footer-brand-text">
+                  <b>O'zbekistonda birinchi bor Mustaqil ta'lim akademiyasi</b>
+                </p>
+
+                <div class="wrapper">
+                  <span class="span">Manzil:</span>
+
+                  <address class="address">Mavlaviyon 3-uy</address>
+
+                </div>
+                <div class="wrapper">
+                  <span class="span">Mo'ljal:</span>
+
+                  <address class="address"> Ippadrom
+                    buyum bozori</address>
+
+                </div>
+                <br>
+
+                <div class="wrapper">
+                  <span class="span">Telefon:</span>
+
+                  <a href="tel:+011234567890" class="footer-link">+998 88 081 18
+                    88,
+                    <span></span>+998 88 081 81 88,<span></span> +998 88 081 88
+                    18</a>
+                </div>
+                <br>
+
+                <div class="wrapper">
+                  <span class="span">Ijtimoiy tarmoqlarda kuzatib boring</span>
+                  <br>
+
+                </div>
+                <ul class="social-list">
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="social-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <ul class="footer-list">
+
+                <li>
+                  <p class="footer-list-title">teamX - zamonaviy kasblar
+                    akademiyasi</p>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link">Akademiya haqida</a>
+                </li>
+
+                <li>
+                  <a href="#courses" class="footer-link">Yo'nalishlar</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link">Ko'rsatma</a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link">E'lonlar</a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+
+            <p class="copyright">
+              Uzbekistan 2024 <span><a href="#"
+                  class="copyright-link">KhabeerTech</a></span>
+            </p>
+
+          </div>
+        </div>
+
+      </footer>
+
+      <!-- 
+    - #BACK TO TOP
+  -->
+
+      <a href="#top" class="back-top-btn" aria-label="back top top"
+        data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+      </a>
+
+      <!-- 
+    - custom js link
+  -->
+      <script src="./assets/js/script.js" defer></script>
+
+      <!-- 
+    - ionicon link
+  -->
+      <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+  </html>

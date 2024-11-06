@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="1326" height="462.98" viewBox="0 0 1326 462.98">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        fill: #512d84;
+        font-family: GoodTimingRg-Bold, 'Good Timing';
+        font-size: 132.21px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 109.07)"><tspan x="0" y="0">+998 88 0</tspan><tspan class="cls-2" x="759.64" y="0">8</tspan><tspan x="855.89" y="0">1 18 88</tspan><tspan x="0" y="158.65">+998 88 0</tspan><tspan class="cls-2" x="759.64" y="158.65">8</tspan><tspan x="855.89" y="158.65">1 </tspan><tspan class="cls-2" x="943.4" y="158.65">8</tspan><tspan class="cls-1" x="1039.65" y="158.65">1 88</tspan><tspan x="0" y="317.29">+998 88 0</tspan><tspan class="cls-2" x="759.64" y="317.29">8</tspan><tspan x="855.89" y="317.29">1 88 18</tspan></text>
+</svg>
